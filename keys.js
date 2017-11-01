@@ -1,5 +1,5 @@
-
-console.log('this is loaded');
+//console log check for liri to load this module
+//console.log('this is loaded');
 
 var twitterKeys = {
   consumer_key: '1XZkXSFMEBPPBuMVQPhw6gto9',

@@ -7,8 +7,16 @@ var Spotify = require("node-spotify-api");
 var config = require('./keys');
 var T = new Twitter(config);
 //does the function entered on the console
-//var action = process.argv[2];
+var action = process.argv[2];
 
+
+if (action === 'myTweets'){
+    myTweets();
+} else 
+    { console.log("your entry is not a recognized action");
+    }
+
+//twitterapi
 function myTweets() {
         params = {screen_name: 'tiffanyyyim'};
 		T.get("statuses/user_timeline/", params, function(error, data, response){
@@ -16,7 +24,7 @@ function myTweets() {
 				for(var i = 0; i < 10; i++) {
 					//console.log(response); // Show the full response in the terminal
 					var twitterResults = 
-					"@" + data[i].tiffanyyyim + ": " + 
+					"@" + data[i].user.screen_name + ": " + 
 					data[i].text + "\r\n" + 
 					data[i].created_at + "\r\n" + 
 					"------------------------------ " + i + " ------------------------------" + "\r\n";
@@ -29,5 +37,3 @@ function myTweets() {
 			}
 		});
 	}
-
-myTweets();
