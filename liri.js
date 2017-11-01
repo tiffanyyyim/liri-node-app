@@ -17,6 +17,7 @@ var song = process.argv[3];
 switch (action){
     case "tweets": myTweets(); break;
     case "spotify": spotifyThisSong(); break;
+    case "movie": movie(); break;
     default: console.log("your entry is not a recognized action");
 };
 
@@ -60,6 +61,15 @@ function spotifyThisSong(){
         })
 }
 
+//request API to get OMDB movie information
+function movie(){request("http://www.omdbapi.com/?apikey=40e9cece&t=Mr.+Nobody", function(error, response, body) {
+ if (!error && response.statusCode === 200) {
+
+    // Then log the body from the site!
+    console.log(body);
+    }
+});
+}
 
 
 
