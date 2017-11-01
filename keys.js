@@ -1,5 +1,5 @@
 //console log check for liri to load this module
-//console.log('this is loaded');
+//console.log('twitter keys are loaded');
 
 var twitterKeys = {
   consumer_key: '1XZkXSFMEBPPBuMVQPhw6gto9',
@@ -11,3 +11,5 @@ var twitterKeys = {
 module.exports = twitterKeys;
 
 //https://apps.twitter.com/app/14418979/keys
+
+
