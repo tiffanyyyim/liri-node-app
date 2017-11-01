@@ -1,12 +1,13 @@
-```JavaScript
+
 console.log('this is loaded');
 
 var twitterKeys = {
-  consumer_key: 'SbZhhKMo4RBgcCsfJFefgytHt',
-  consumer_secret: 'ni3dQZtt47SykUsrTiIaQjPth6D0f35mtbNW4uLP3pdbzDzGG6',
-  access_token_key: '922591021195825152-3XMKsxJx3omsH6HUIaW3DA2MRATxB3K',
-  access_token_secret: 'Ngir3EiiJjbxrLIp41k9cKJZH0Z8qVAnPjqj8vsVPHtdY',
+  consumer_key: '1XZkXSFMEBPPBuMVQPhw6gto9',
+  consumer_secret: 'h02DTm0AJwGaNsb7vywVq3qyUKp29XPWid5Hi2ujibgNPeC71C',
+  access_token_key: '922591021195825152-PJY3jr6ebFbQoEu6aTNDuJDUSusDQ2w',
+  access_token_secret: 'ZceTlMIkJIEjom30VAu0KGLkZ0DXC7KSghRRNkgdpE6TT',
 }
 
 module.exports = twitterKeys;
-```
+
+//https://apps.twitter.com/app/14418979/keys
